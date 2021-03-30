@@ -181,6 +181,13 @@ const Header = ({ siteTitle }) => {
               <FaCocktail style={{ position: "relative", top: 3 }} /> Acerca de
             </Link>
           </li>
+          <li>
+            <a href="https://www.instagram.com/activacioncreativa">
+              <FaInstagram
+                style={{ fontSize: "3rem", position: "relative", top: 3 }}
+              />
+            </a>
+          </li>
         </ul>
       </MenuLinks>
       <DesktopLinks>
@@ -210,11 +217,11 @@ const Header = ({ siteTitle }) => {
             </Link>
           </li>
           <li>
-            <Link to="https://www.instagram.com/activacioncreativa">
+            <a href="https://www.instagram.com/activacioncreativa">
               <FaInstagram
                 style={{ fontSize: "1.3rem", position: "relative", top: 3 }}
               />
-            </Link>
+            </a>
           </li>
         </ul>
       </DesktopLinks>

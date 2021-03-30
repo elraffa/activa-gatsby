@@ -27,5 +27,12 @@ const GlobalStyle = createGlobalStyle`
        font-family: Oswald, sans-serif;
        font-weight: 700;
    }
+
+   .main-text {
+    font-size: clamp(1rem, -0.7rem + 3.333vw, 1.5rem);
+    margin-bottom: 3rem;
+    line-height: 1.4;
+    max-width: 50ch;
+   }
 `
 export default GlobalStyle

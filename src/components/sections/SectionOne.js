@@ -23,7 +23,7 @@ const Title = styled.h1`
 `
 
 const Text = styled.p`
-  font-size: clamp(0.8rem, -0.7rem + 3.333vw, 1.5rem);
+  font-size: clamp(1rem, -0.7rem + 3.333vw, 1.5rem);
   margin-bottom: 3rem;
   line-height: 1.4;
   max-width: 50ch;
