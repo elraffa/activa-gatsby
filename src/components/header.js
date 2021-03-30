@@ -7,6 +7,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 // React icons
 import { FaInstagram } from "react-icons/fa"
+import { FaRegEnvelope } from "react-icons/fa"
+import { FaTasks } from "react-icons/fa"
+import { FaCocktail } from "react-icons/fa"
 
 const HeaderNav = styled.header`
   background-color: rgba(230, 97, 127, 0.15);
@@ -28,8 +31,10 @@ const DesktopLinks = styled.nav`
 
   ul {
     display: flex;
+    align-items: center;
     gap: 1rem;
   }
+
   li {
     list-style-type: none;
   }
@@ -37,6 +42,16 @@ const DesktopLinks = styled.nav`
   a {
     color: rgba(230, 97, 127);
     text-shadow: none;
+    padding: 0.5rem;
+    background-color: rgba(230, 97, 127, 0);
+
+    &:hover {
+      background-color: rgba(230, 97, 127, 1);
+      color: white;
+      padding: 0.5rem;
+      border-radius: 0.4rem;
+      transition: background-color 600ms, color 600ms;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -151,30 +166,54 @@ const Header = ({ siteTitle }) => {
             />
           </Link>
           <li nav={nav} onClick={() => showNav(!nav)}>
-            <Link to="#subscribe">Suscribite</Link>
+            <Link to="#subscribe">
+              <FaRegEnvelope style={{ position: "relative", top: 3 }} />{" "}
+              Suscribite
+            </Link>
           </li>
           <li nav={nav} onClick={() => showNav(!nav)}>
-            <Link to="#actividades">Actividades</Link>
+            <Link to="#actividades">
+              <FaTasks style={{ position: "relative", top: 3 }} /> Actividades
+            </Link>
           </li>
           <li nav={nav} onClick={() => showNav(!nav)}>
-            <Link to="#about">Acerca de</Link>
+            <Link to="#about">
+              <FaCocktail style={{ position: "relative", top: 3 }} /> Acerca de
+            </Link>
           </li>
         </ul>
       </MenuLinks>
       <DesktopLinks>
         <ul>
           <li>
-            <Link to="#subscribe">Suscribite</Link>
+            <Link to="#subscribe">
+              <FaRegEnvelope
+                style={{ fontSize: "1.3rem", position: "relative", top: 3 }}
+              />{" "}
+              Suscribite
+            </Link>
           </li>
           <li>
-            <Link to="#actividades">Actividades</Link>
-          </li>
-          <li>
-            <Link to="#about">Acerca de</Link>
+            <Link to="#actividades">
+              <FaTasks
+                style={{ fontSize: "1.3rem", position: "relative", top: 3 }}
+              />{" "}
+              Actividades
+            </Link>
           </li>
           <li>
             <Link to="#about">
-              <FaInstagram style={{ fontSize: "1.3rem" }} />
+              <FaCocktail
+                style={{ fontSize: "1.3rem", position: "relative", top: 2 }}
+              />{" "}
+              Acerca de
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.instagram.com/activacioncreativa">
+              <FaInstagram
+                style={{ fontSize: "1.3rem", position: "relative", top: 3 }}
+              />
             </Link>
           </li>
         </ul>

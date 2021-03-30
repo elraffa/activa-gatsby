@@ -7,6 +7,9 @@ const Hero = styled.section`
   background-color: #7365aa;
   color: white;
   padding: 2rem;
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
 `
 
 const Title = styled.h2`
@@ -21,21 +24,50 @@ const Text = styled.p`
   line-height: 1.4;
   max-width: 50ch;
 `
+const ActivitImages = styled.div`
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+`
 
 const SectionThree = ({ props }) => {
   return (
     <>
       <Hero>
-        <Title id="actividades">Actividades</Title>
-        <Text>
-          Activación Creativa realiza seminarios y talleres que consisten en la
-          exploración de las prácticas creativas, sus procesos y devenires. En
-          cada seminario se trata un tema particular relacionado al universo de
-          la creatividad, y en los talleres se trabaja con materiales,
-          actividades y dinámicas grupales para desbloquear, potenciar y
-          comprender los propios procesos creativos y lograr una expresión
-          sensible más poderosa y libre. .{" "}
-        </Text>
+        <ActivitImages>
+          <StaticImage
+            src="../../images/taller-01.jpg"
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Vicu Villanueva"
+          />
+          <StaticImage
+            src="../../images/taller-02.jpg"
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Vicu Villanueva"
+          />
+          <StaticImage
+            src="../../images/taller-03.jpg"
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="Vicu Villanueva"
+          />
+        </ActivitImages>
+        <div>
+          <Title id="actividades">Actividades</Title>
+          <Text>
+            Activación Creativa realiza seminarios y talleres que consisten en
+            la exploración de las prácticas creativas, sus procesos y devenires.
+            En cada seminario se trata un tema particular relacionado al
+            universo de la creatividad, y en los talleres se trabaja con
+            materiales, actividades y dinámicas grupales para desbloquear,
+            potenciar y comprender los propios procesos creativos y lograr una
+            expresión sensible más poderosa y libre. .{" "}
+          </Text>
+        </div>
       </Hero>
     </>
   )

@@ -86,7 +86,7 @@ const SectionTwo = ({ props }) => {
                 type="email"
                 //   value=""
                 name="EMAIL"
-                class="required email"
+                // class="required email"
                 id="email"
                 placeholder="vicuresponde@gmail.com"
               />

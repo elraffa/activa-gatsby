@@ -26,8 +26,8 @@ const SectionFive = ({ props }) => {
   return (
     <>
       <Hero>
-        <Title id="about">Acerca de Vicu</Title>
-        <Text>Footer</Text>
+        <Title id="about">Comunidad</Title>
+        <Text>Nuestra red social colaborativa está en construcción</Text>
       </Hero>
     </>
   )
