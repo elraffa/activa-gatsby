@@ -61,7 +61,7 @@ const MenuLinks = styled.nav`
   background: rgba(6, 123, 194, 0.99);
   transition: transform 300ms;
   transform: ${({ nav }) => (nav ? "translateX(0)" : "translate(100%)")};
-  display: ${({ nav }) => (nav ? "flex" : "null")};
+  display: ${({ nav }) => (nav ? "flex" : undefined)};
 
   ul {
     display: block;

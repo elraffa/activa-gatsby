@@ -108,7 +108,7 @@ const SectionTwo = ({ props }) => {
           </form>
         </div>
         <BackgroundImage>
-          <img src={SignupBg} alt="Activación Creativa en Abril" width={500} />
+          <img src={SignupBg} alt="Activación Creativa en Abril" width={600} />
         </BackgroundImage>
       </Hero>
     </>
