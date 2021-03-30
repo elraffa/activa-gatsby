@@ -10,6 +10,10 @@ const Hero = styled.section`
   display: flex;
   gap: 4rem;
   flex-direction: row;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const Title = styled.h2`
