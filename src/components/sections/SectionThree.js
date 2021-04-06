@@ -59,13 +59,10 @@ const SectionThree = ({ props }) => {
         <div>
           <Title id="actividades">Actividades</Title>
           <Text className="main-text">
-            Activación Creativa realiza seminarios y talleres que consisten en
-            la exploración de las prácticas creativas, sus procesos y devenires.
-            En cada seminario se trata un tema particular relacionado al
-            universo de la creatividad, y en los talleres se trabaja con
-            materiales, actividades y dinámicas grupales para desbloquear,
-            potenciar y comprender los propios procesos creativos y lograr una
-            expresión sensible más poderosa y libre.
+            Realizamos seminarios y talleres que exploran distintas prácticas
+            creativas, sus procesos y devenires. El próximo seminario es el 14/4
+            vía Zoom, y la propuesta es "La Creatividad en la Era de las Redes
+            Sociales".
           </Text>
         </div>
       </Hero>

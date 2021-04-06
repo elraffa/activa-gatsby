@@ -53,23 +53,25 @@ const SectionFour = ({ props }) => {
         <div>
           <Title id="about">Acerca de Vicu</Title>
           <Text>
-            Me llamo Victoria Villanueva pero me dicen Vicu, quizás me conozcas
-            de distintos lugares de internet como YouTube - donde me hice viral
-            con un video sobre las princesas de Disney-, o mi Instagram donde
-            comparto ideas sobre activismo, arte y creatividad. Este proyecto,
-            Activación Creativa, nació el 2016 cuando estaba trabajando en una
-            oficina y pregunté en mi Facebook si a alguien más le serviría
-            juntarnos a pensar colectivamente nuestros procesos creativos, a
-            explorar y compartir.
+            ¡Hola! Acá Vicu, la mente detrás de esta comunidad. Quizás me
+            conozcas de distintos lugares de internet como YouTube - donde me
+            hice viral con un video sobre las princesas de Disney-, o mi
+            Instagram donde comparto ideas sobre activismo, arte y creatividad.
+          </Text>
+          <Text>
+            Este proyecto nació el 2016 cuando estaba trabajando en una oficina
+            y tuve el impulso de buscar estrategias para conectar con la
+            creatividad en situaciones que atentan contra nuestra capacidad de
+            expresión.
           </Text>
           <Text>
             La convocatoria resonó y a partir de ahí realicé talleres, charlas,
             videos y escritos sobre creatividad, deviniendo en lo que hoy llamo
-            Activación Creativa. La idea de este proyecto es proveer un espacio
-            seguro para explorar la creatividad en todas sus formas, fuera de
-            los parámetros “productivos” que se le imponen a las prácticas
-            expresivas. Es decir, una verdadera revolución creativa. Amo este
-            proyecto y me hace muy feliz compartir esto con el mundo.{" "}
+            Activación Creativa. La idea de este proyecto es explorar la
+            creatividad en todas sus formas, fuera de los parámetros
+            “productivos” que se le imponen a las prácticas expresivas. Es
+            decir, una verdadera revolución creativa. Amo este proyecto y me
+            hace muy feliz compartirlo con el mundo. .{" "}
           </Text>
         </div>
         <AboutImages>

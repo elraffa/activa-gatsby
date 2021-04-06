@@ -1,7 +1,10 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
+
+import Button from "../ui/Button"
 
 const Hero = styled.section`
   background-color: rgba(230, 97, 127, 1);
@@ -33,19 +36,53 @@ const Text = styled.p`
   }
 `
 
+const Buttons = styled.div`
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+`
+
 const SectionOne = ({ props }) => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { eq: "pdf" } }) {
+        edges {
+          node {
+            publicURL
+            name
+          }
+        }
+      }
+    }
+  `)
+  console.log(data)
   return (
     <>
       <Hero>
         <div>
-          <Title>Activación Creativa</Title>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            excepturi iste reiciendis tenetur voluptatibus, ex veniam itaque
-            aspernatur illo distinctio? Eveniet, blanditiis! Modi, eaque minus.
-            Ducimus nisi, porro commodi minima recusandae, error sunt ad fugit
-            numquam deserunt accusantium atque unde.
-          </Text>
+          <div>
+            <Title>Esto es Activación Creativa</Title>
+            <Text>
+              Somos una comunidad en busca de una creatividad rebelde. Ideas,
+              talleres, seminarios y reflexiones para construir una relación
+              propia con nuestro poder creativo. ¡Qué bueno que estés acá!
+            </Text>
+          </div>
+          <Buttons>
+            <Button
+              buttonText="Inscribite"
+              buttonLink="https://forms.gle/jN1iURkFzhs9Zceo7"
+            />
+            {data.allFile.edges.map((file, index) => {
+              return (
+                <Button
+                  buttonText="Más info"
+                  buttonLink={file.node.publicURL}
+                />
+              )
+            })}
+          </Buttons>
         </div>
         <StaticImage
           src="../../images/flyer-ac-abril-square.png"

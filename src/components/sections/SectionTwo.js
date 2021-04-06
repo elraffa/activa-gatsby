@@ -67,9 +67,8 @@ const SectionTwo = ({ props }) => {
         <div style={{ marginBottom: "24rem" }}>
           <Title id="subscribe">Suscribite</Title>
           <Text>
-            Dejá tu mail acá para recibir mucho material y explorar tu
-            creatividad en tu casilla de mail. Es gratis y vas a recibir tips,
-            herramientas, videos, textos y mucho más.{" "}
+            Dejá tu mail acá para recibir mucho material y enterarte de todas
+            las novedades de Activación Creativa.{" "}
           </Text>
 
           <form
