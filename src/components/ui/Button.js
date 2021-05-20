@@ -16,6 +16,10 @@ const MainButton = styled.button`
   &:hover {
     background: #fafd7f;
   }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `
 
 const Button = ({ buttonText, buttonLink }) => {

@@ -72,7 +72,7 @@ const SectionOne = ({ props }) => {
           <Buttons>
             <Button
               buttonText="Inscribite"
-              buttonLink="https://forms.gle/jN1iURkFzhs9Zceo7"
+              buttonLink="https://forms.gle/zUpXyFwPMAWLbPgB9"
             />
             {data.allFile.edges.map((file, index) => {
               return (
@@ -85,7 +85,7 @@ const SectionOne = ({ props }) => {
           </Buttons>
         </div>
         <StaticImage
-          src="../../images/flyer-ac-abril-square.png"
+          src="../../images/flyer-ac-junio-2021.png"
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="Activación Creativa en Abril"
