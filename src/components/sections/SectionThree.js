@@ -60,9 +60,9 @@ const SectionThree = ({ props }) => {
           <Title id="actividades">Actividades</Title>
           <Text className="main-text">
             Realizamos seminarios y talleres que exploran distintas prácticas
-            creativas, sus procesos y devenires. El próximo seminario es el 14/4
-            vía Zoom, y la propuesta es "La Creatividad en la Era de las Redes
-            Sociales".
+            creativas, sus procesos y devenires. El próximo taller será vía Zoom
+            los jueves 10/6, 17/6, 24/6 y 1/7, de 18hs a 20hs. y la propuesta es
+            "La Creatividad No-Productiva".
           </Text>
         </div>
       </Hero>

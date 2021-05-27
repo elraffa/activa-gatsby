@@ -46,7 +46,7 @@ const Buttons = styled.div`
 const SectionOne = ({ props }) => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { extension: { eq: "pdf" } }) {
+      allFile(filter: { name: { eq: "PDF-Curso-AC" } }) {
         edges {
           node {
             publicURL
@@ -72,7 +72,7 @@ const SectionOne = ({ props }) => {
           <Buttons>
             <Button
               buttonText="Inscribite"
-              buttonLink="https://forms.gle/zUpXyFwPMAWLbPgB9"
+              buttonLink="https://forms.gle/E1wZgTXKk6WfvsBt8"
             />
             {data.allFile.edges.map((file, index) => {
               return (
@@ -85,7 +85,7 @@ const SectionOne = ({ props }) => {
           </Buttons>
         </div>
         <StaticImage
-          src="../../images/flyer-ac-junio-2021.png"
+          src="../../images/flyer-junio.png"
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="Activación Creativa en Abril"
