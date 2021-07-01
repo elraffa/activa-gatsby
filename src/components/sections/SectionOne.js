@@ -72,7 +72,7 @@ const SectionOne = ({ props }) => {
           <Buttons>
             <Button
               buttonText="Inscribite"
-              buttonLink="https://forms.gle/E1wZgTXKk6WfvsBt8"
+              buttonLink="https://forms.gle/tyXu3boRHFySwy6a9"
             />
             {data.allFile.edges.map((file, index) => {
               return (
